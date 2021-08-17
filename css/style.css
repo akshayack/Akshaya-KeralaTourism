@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.tour-head{
+    height: 7em;
+    background-color: rgb(255,250,240);
+}
+
+.tour-logo{
+    margin-left: 0;
+    margin-top: 0;
+    height: 5em;
+}
+
+.tour-head h1{
+    margin-top: -1em;
+    margin-left: 3em;
+    font-family: Didot, serif;
+    float: left;
+    font-style: italic;
+}
+
+
+.head-tag{
+    list-style-type: none;
+    float: right;
+    margin-top: -0.5em;
+    margin-right: 2em;
+}
+
+.head-tag li{
+    display: inline;
+}
+
+.head-tag a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 2px solid darkblue;
+    border-radius: 25px;
+    padding: 10px;
+    margin-right: 8px;
+    background-color: lightblue;
+}
+
+.head-tag a:hover{
+    background-color: cyan;
+}
+
+.red-size{
+    margin-left: 12%;
+    margin-top: 3%;
+    width: 75%;
+}
+
+.about-kerala{
+    border: 5px solid lightgreen;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 3px;
+}
+
+
+.column {
+    float: left;
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .row{
+      margin-left: 10%;
+      margin-right: 5%;
+  }
+
+  .tour{
+    margin-top: 5%;
+    border: 2px solid pink;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+.arts{
+    margin-top: 5%;
+    border: 2px solid pink;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.fest{
+    margin-top: 5%;
+    border: 2px solid pink;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#contact{
+    margin-top: 5%;
+    align-content: center;
+    border: 2px solid pink;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: -10%;
+}
+
+
+
+/* Login Page styling STARTS here*/
+
+.login-body{
+    background-image: url(../images/loginbg\ \(2\).png);
+    background-size: cover;
+}
+
+.login-form{
+    margin-top: 3em;
+    margin-left: 5%;
+    margin-right: 58%;
+    border: 2px solid rgb(3, 155, 61);
+    border-radius: 25px;
+    background-color: white;
+}
+
+.h3-login{
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-login{
+    margin-top: 2em;   
+}
+
+.form-mp{
+    margin: 0px 10px 0px 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.login-misc{
+    text-align: center;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.social-icons{
+    text-align: center;
+}
+
+.social-icons h5{
+    font-style: italic;
+}
+
+#login-foot{
+    background-color: rgb(255,250,240);
+    color: black;
+    height: 8em;
+    margin-top: 15%;
+    text-align: center;
+}
+
+/* Login Page Styling ENDS */
+
+
+/* Signup page styling STARTS here  */
+
+.signup-body{
+    background-image: url(../images/signupimg.jpeg);
+    background-size: cover;
+}
+
+.signup-form{
+    margin-top: 3em;
+    margin-left: 27%;
+    margin-right: 41%;
+    border: 2px solid rgb(3, 155, 61);
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
+}
+
+.h3-signup{
+    text-align: center;
+}
+
+.form-signup{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Signup page styling ENDS here */
+
+
+/* District page styling STARTS here  */
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 10em;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: -400px;
+    height: 8.5em;
+    margin-top: 10%;
+    width:100%;
+    background-color: rgb(252, 242, 223);
+    color: black;
+    text-align: center;
+    margin-left: 5px;
+ }
+
+ #footer .social-icons{
+    text-align: center;
+}
+
+#footer .social-icons h5{
+    font-style: italic;
+}
+
+#footer .fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+  
+.flip-card {
+    padding: 25px;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    float: left;
+    perspective: 1000px; 
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+  .image-front{
+      width: 100%;
+      height: 100%;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+/* District page styling ENDS here */
+
+/* Districts styling STARTS here */
+
+.dist-nav{
+    background-color: cyan;
+}
+
+.dist-detl{
+    align-content: center;
+}
+
+.dist-head{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dist-image{
+    margin-left: 30%;
+    margin-bottom: 25px;
+    height: 25em;
+    align-content: center;
+}
+
+.dist-para{
+    text-align: center;
+    text-indent: 40px;
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.places-visit{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Districts styling ENDS here */
