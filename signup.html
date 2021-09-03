@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./bootstrap.min.css">
 </head>
@@ -26,34 +27,48 @@
         </div>
     </header>
     
-    <form class="signup-form">
+    <form class="signup-form" id="form">
         <h3 class="h3-signup">Create an Account</h3>
         <br>
         <div class="container-sm form-signup">
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6 form-controls ">
             <label for="inputEmail4">Name</label>
-            <input type="name" class="form-control" id="inputEmail4">
+            <input type="name" class="form-control" id="name" placeholder="Enter your Name">
+            <small>Error Message</small>
         </div>
         <br>
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6 form-controls ">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+            <small>Error Message</small>
         </div>
         <br>
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6 form-controls">
+            <label for="inputEmail4">Phone Number</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter your Phone Number">
+            <small>Error Message</small>
+        </div>
+        <br>
+        <div class="form-group col-md-6 form-controls">
             <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <input type="password" class="form-control" id="password" placeholder="Enter your Password">
+            <span class="show-pass" onclick="toggle()">
+                <i class="far fa-eye" onclick="myFunction(this)"></i>
+            </span>
+            <small>Error Message</small>
         </div>
         <br>
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6 form-controls">
             <label for="inputPassword4">Re-type Password</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <input type="password" class="form-control" id="repassword" placeholder="Re-type your Password">
+            <small>Error Message</small>
         </div>
         <br>
         <div>
         <button type="submit" class="btn btn-primary">Sign Up</button>
         <button type="reset" class="btn btn-primary">Cancel</button>
         </div>
+        <br>
         <h6>Already have an Account?</h6>
         <a href="./login.html">Login</a>
     </div>
@@ -75,5 +90,6 @@
         
     </footer>
 
+    <script src="./js/script.js"></script>
 </body>
 </html>

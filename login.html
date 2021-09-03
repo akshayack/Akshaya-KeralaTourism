@@ -26,20 +26,18 @@
     </div>
   </header>
 
-    <form class="login-form">
+    <form class="login-form" id="form">
         <h3 class="h3-login">Login</h3>
         <div class="container-sm form-login">
-        <div class="row mb-3 form-mp">
-          <label for="inputEmail3" class="col-sm-2 col-form-label" >Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your Email">
-          </div>
+        <div class="row mb-3 form-mp ">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+          <small>Error Message</small>
         </div>
-        <div class="row mb-3 form-mp">
+        <div class="row mb-3 form-mp ">
           <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Enter your Password">
-          </div>
+            <input type="password" class="form-control" id="password" placeholder="Enter your Password">
+          <small>Error Message</small>
         </div>
         <div class="login-misc">
         <button type="submit" class="btn btn-primary">Login</button>
@@ -75,6 +73,8 @@
       <a href="./districts.html">Districts</a>
       <h6> &copy; Copyright </h6>
     </footer>
+
+    <script src="./js/login.js"></script>
 
 </body>
 </html>
