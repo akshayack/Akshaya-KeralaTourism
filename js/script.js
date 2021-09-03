@@ -4,8 +4,30 @@ let email = document.getElementById("email");
 let phone = document.getElementById("phone");
 let password = document.getElementById("password");
 let repassword = document.getElementById("repassword");
+let passwordStrength = document.getElementById("password-strength");
+
+function myFunction(show){
+    show.classList.toggle('fa-eye-slash');
+}
+
+function toggle() {
+    if(state) {
+        password.setAttribute("type" , "password");
+        state : false ;
+    }
+    else {
+        password.setAttribute("type" , "text");
+        state : true;
+    }
+}
 
 form.addEventListener('submit' , (e) => {
+    e.preventDefault();
+
+    checkInputs();
+});
+
+form.addEventListener('keyup' , (e) => {
     e.preventDefault();
 
     checkInputs();
@@ -49,6 +71,9 @@ function checkInputs() {
     if(pass1 === '') {
         setErrorFor(password , 'Password cannot be blank');
     }
+    else if(strengthChecker(pass1)) {
+        
+    }
     else {
         setSuccessFor(password);
     }
@@ -88,3 +113,48 @@ function isPhone(phone) {
     return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(phone);
 }
 
+function strengthChecker(password) {
+
+    let strength = 0 ;
+    if(password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)){
+        strength += 1;
+    }
+    if(password.match(/([0-9])/)) {
+        strength += 1;
+    }
+    if(password.match(/([!,@,#,$,%,^,&,*,_,~,?])/)){
+        strength += 1;
+    }
+    if(password.length > 7){
+        strength += 1;
+    }
+
+    // if(strength == )
+
+    if(strength == 0){
+        passwordStrength.style = "width:0%";
+    }
+    else if(strength == 2){
+        passwordStrength.classList.remove('progress-bar-warning');
+        passwordStrength.classList.remove('progress-bar-success');
+        passwordStrength.classList.add('progress-bar-danger');
+        // passwordStrength.style.backgroundColor = "red";
+        passwordStrength.innerText = "weak";
+        passwordStrength.style = "width :10%";
+    }
+    else if(strength == 3){
+        passwordStrength.classList.remove('progress-bar-success');
+        passwordStrength.classList.remove('progress-bar-danger');
+        passwordStrength.classList.add('progress-bar-warning');
+        passwordStrength.style = "width: 60%";
+    }
+
+    else if(strength == 4){
+        passwordStrength.classList.remove('progress-bar-warning');
+        passwordStrength.classList.remove('progress-bar-danger');
+        passwordStrength.classList.add('progress-bar-success');
+        passwordStrength.style = "width: 100%";
+    }
+
+
+}

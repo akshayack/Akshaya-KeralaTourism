@@ -27,7 +27,7 @@
         </div>
     </header>
     
-    <form class="signup-form" id="form">
+    <form action="#" class="signup-form" id="form">
         <h3 class="h3-signup">Create an Account</h3>
         <br>
         <div class="container-sm form-signup">
@@ -51,10 +51,14 @@
         <br>
         <div class="form-group col-md-6 form-controls">
             <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter your Password">
-            <span class="show-pass" onclick="toggle()">
-                <i class="far fa-eye" onclick="myFunction(this)"></i>
-            </span>
+            <input type="password" class="form-control" id="password" placeholder="Enter a strong Password">
+            <div id="popover-password">
+                <p><span id="result"></span></p>
+                <div class="progress">
+                    <div id="password-strength" class="progress-bar" role="progressbar" aria-valuenow="40px"
+                    aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+                </div>
+            </div>
             <small>Error Message</small>
         </div>
         <br>
