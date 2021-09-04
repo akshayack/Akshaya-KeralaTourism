@@ -138,7 +138,8 @@ function strengthChecker(password) {
         passwordStrength.classList.remove('progress-bar-warning');
         passwordStrength.classList.remove('progress-bar-success');
         passwordStrength.classList.add('progress-bar-danger');
-        // passwordStrength.style.backgroundColor = "red";
+        // document.getElementById("password-strength").style.backgroundColor = "red";
+        // passwordStrength.style.color = "red";
         passwordStrength.innerText = "weak";
         passwordStrength.style = "width :10%";
     }
@@ -146,6 +147,7 @@ function strengthChecker(password) {
         passwordStrength.classList.remove('progress-bar-success');
         passwordStrength.classList.remove('progress-bar-danger');
         passwordStrength.classList.add('progress-bar-warning');
+        passwordStrength.innerText = "Medium";
         passwordStrength.style = "width: 60%";
     }
 
@@ -153,6 +155,7 @@ function strengthChecker(password) {
         passwordStrength.classList.remove('progress-bar-warning');
         passwordStrength.classList.remove('progress-bar-danger');
         passwordStrength.classList.add('progress-bar-success');
+        passwordStrength.innerText = "Strong";
         passwordStrength.style = "width: 100%";
     }
 
